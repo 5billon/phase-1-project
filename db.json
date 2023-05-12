@@ -1,11 +1,80 @@
 {
-  "cat": [
+  "cats": [
     {
       "id": 1,
       "name": "cat",
       "breed": "normal cat",
+      "color": "black",
+      "image": "picture of cat",
+      "comment": "cute cat"
+    },
+    {
+      "id": 2,
+      "name": "cat",
+      "breed": "normal cat",
+      "color": "black",
       "image": "picture of cat",
       "comment": "cute cat"
     }, 
-    ]
+    {
+      "id": 3,
+      "name": "cat",
+      "breed": "normal cat",
+      "color": "black",
+      "image": "picture of cat",
+      "comment": "cute cat"
+    }, 
+    ],
+  "dogs": [
+    {
+      "id": 1,
+      "name": "dog",
+      "breed": "normal dog",
+      "color": "brown",
+      "image": "picture of dog",
+      "comment": "cute dog"
+    }, 
+    {
+      "id": 2,
+      "name": "dog",
+      "breed": "normal dog",
+      "color": "brown",
+      "image": "picture of dog",
+      "comment": "cute dog"
+    }, 
+    {
+      "id": 3,
+      "name": "dog",
+      "breed": "normal dog",
+      "color": "brown",
+      "image": "picture of dog",
+      "comment": "cute dog"
+    }, 
+    ],
+  "animal3": [
+    {
+      "id": 1,
+      "name": "animal3",
+      "breed": "normal animal3",
+      "color": "rainbow",
+      "image": "picture of animal3",
+      "comment": "cute animal3"
+    }, 
+    {
+      "id": 2,
+      "name": "animal3",
+      "breed": "normal animal3",
+      "color": "rainbow",
+      "image": "picture of animal3",
+      "comment": "cute animal3"
+    }, 
+    {
+      "id": 3,
+      "name": "animal3",
+      "breed": "normal animal3",
+      "color": "rainbow",
+      "image": "picture of animal3",
+      "comment": "cute animal3"
+    }, 
+    ],
 }
