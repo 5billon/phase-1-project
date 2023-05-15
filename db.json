@@ -26,8 +26,8 @@
       "age": "2",
       "image": "https://images.ctfassets.net/s7r1h98f1v8b/2GXve7pFtOQMAjgUDThieF/d0db109107ac418015572c5e1cf05e70/scottish_fold.jpg",
       "comment": "An adorable tiger striped cat, ready to find his forever home!"
-    }
-    ],
+
+    }],
   "dogs": [
     {
       "id": 1,
@@ -49,12 +49,13 @@
     }, 
     {
       "id": 3,
-      "name": "dog",
-      "breed": "normal dog",
-      "color": "brown",
-      "age": "#",
-      "image": "picture of dog",
-      "comment": "cute dog"
+      "name": "Bella",
+      "breed": "Jack Russel",
+      "color": "White/Black",
+      "age": "4",
+      "image": "https://files.slack.com/files-tmb/T02MD9XTF-F057V55MBEW-01bead4679/img_2090_720.jpg",
+      "comment": "A small beautiful dog that loves to have her belly rubbed!"
+
     }
     ]
 }
