@@ -26,8 +26,8 @@
       "age": "2",
       "image": "https://images.ctfassets.net/s7r1h98f1v8b/2GXve7pFtOQMAjgUDThieF/d0db109107ac418015572c5e1cf05e70/scottish_fold.jpg",
       "comment": "An adorable tiger striped cat, ready to find his forever home!"
-
-    }],
+    }
+    ],
   "dogs": [
     {
       "id": 1,
