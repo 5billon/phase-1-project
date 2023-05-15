@@ -51,30 +51,4 @@
       "comment": "cute dog"
     }, 
     ],
-  "animal3": [
-    {
-      "id": 1,
-      "name": "animal3",
-      "breed": "normal animal3",
-      "color": "rainbow",
-      "image": "picture of animal3",
-      "comment": "cute animal3"
-    }, 
-    {
-      "id": 2,
-      "name": "animal3",
-      "breed": "normal animal3",
-      "color": "rainbow",
-      "image": "picture of animal3",
-      "comment": "cute animal3"
-    }, 
-    {
-      "id": 3,
-      "name": "animal3",
-      "breed": "normal animal3",
-      "color": "rainbow",
-      "image": "picture of animal3",
-      "comment": "cute animal3"
-    }, 
-    ],
 }
