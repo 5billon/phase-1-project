@@ -1,22 +1,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
+<head> 
+    <meta charset="UTF-8">
+    <title>Cutest Pet Competition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer type = "text/javascript" src="index.js"></script>
+</head>
+
 <body>
+    <header>
+        <h3>Cutest Pet Competition</h3>
+    </header>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
 
-<div class="">
+<!-- Pet Photos -->
+<div id = "pet-cards">
+<img class = "pet-image" />
+</div>
+
+<!--Pet Details-->
+
+<div id ="pet-details">
+
  <h1>This is a Heading</h1>
  <p>This is a paragraph.</p>
  <p>This is another paragraph.</p>
 </div>
+
+
+
+
+<form id="new-pet">
+    <h4>Add New Pet</h4>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="new-name" />
+    <label for="breed">Breed: </label>
+    <input type="text" name="breed" id="new-breed" />
+    <label for="color">Color: </label>
+    <input type="text" name="color" id="new-color" />
+    <label for="age">Age: </label>
+    <input type="number" name="age" id="new-age" />
+    <label for="image">Image: </label>
+    <input type="text" name="image" id="new-image" />
+    <label for="new-comment">Comment: </label>
+    <textarea name="new-comment" id="new-comment"></textarea>
+    <input type="submit" value="Create" />
+  </form>
 
 </body>
 </html>
