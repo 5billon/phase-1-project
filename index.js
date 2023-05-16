@@ -51,18 +51,21 @@ function renderPet(pet) {
 function getPopupList(pet) {
   let info = document.createElement('ul')
 
-  let breed = document.createElement('li')
+  let breed = document.createElement('dl')
   breed.textContent = `Breed: ${pet.breed}`
   info.appendChild(breed)
 
-  let furcolor = document.createElement('li')
+  let furcolor = document.createElement('dl')
   furcolor.textContent = `Color: ${pet.color}`
   info.appendChild(furcolor)
   
-  let age = document.createElement('li')
+  let age = document.createElement('dl')
   age.textContent = `Age: ${pet.age}`
   info.appendChild(age)
-  //age.textContent = `Age: ${pet.age}`
+
+  let comment = document.createElement('dl')
+  comment.textContent = `${pet.comment}`
+  info.appendChild(comment) 
   
   return info
 }
