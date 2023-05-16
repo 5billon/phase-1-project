@@ -6,28 +6,31 @@ fetch ("http://localhost:3000/cats")
   .then (response => response.json())
   .then((dogs) => dogs.forEach((dog) => renderPet(dog)))
 
-const petCardsDiv = document.querySelector("#pet-cards")
+const petCollection = document.querySelector("#pet-collection")
 
 function renderPet(pet) {
-   
+    const petCard = document.createElement('div')
+    petCard.className = 'card'
 
     const h2 = document.createElement('h2')
     h2.textContent = pet.name
-    petCardsDiv.appendChild(h2)
+    petCard.appendChild(h2)
 
     const img = document.createElement('img')
     img.src = pet.image
     img.className = 'pet-avatar'
-    petCardsDiv.appendChild(img)
+    petCard.appendChild(img)
 
     const p = document.createElement('p')
     p.textContent = pet.votes
-    petCardsDiv.appendChild(p)
+    petCard.appendChild(p)
 
     const button = document.createElement ('button')
     button.id = "vote-button"
     button.textContent = "Vote For Me!"
-    petCardsDiv.append(button)
+    petCard.append(button)
+
+    petCollection.appendChild(petCard)
 
 
     button.addEventListener('click',addVotesToPet)
