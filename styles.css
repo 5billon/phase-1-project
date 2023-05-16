@@ -5,3 +5,9 @@ form {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .pet-avatar {
+    justify-self: center;
+    height: 12rem;
+    width: auto;
+  }

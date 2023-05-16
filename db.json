@@ -6,6 +6,7 @@
       "breed": "American Shorthair",
       "color": "Black",
       "age": "1",
+      "votes": "0",
       "image": "https://media.istockphoto.com/id/173240099/photo/surprise-kitty-cute-black-cat-screaming.jpg?s=612x612&w=0&k=20&c=fKCBMfIQuunPUC0DQTcI25iFnBAEaCfLxZX94oajjNM=",
       "comment": "A young kitty with some fiesty aspects in him!"
     },
@@ -15,6 +16,7 @@
       "breed": "Maine Coon",
       "color": "Orange",
       "age": "3",
+      "votes": "0",
       "image": "https://petskb.com/wp-content/uploads/2021/12/Ginger-Maine-Coon-798x1024.jpg",
       "comment": "A beautiful maine coon, who loves to snuggle and relax!"
     }, 
@@ -24,6 +26,7 @@
       "breed": "Scottish Fold",
       "color": "White with Stripes",
       "age": "2",
+      "votes": "0",
       "image": "https://images.ctfassets.net/s7r1h98f1v8b/2GXve7pFtOQMAjgUDThieF/d0db109107ac418015572c5e1cf05e70/scottish_fold.jpg",
       "comment": "An adorable tiger striped cat, ready to find his forever home!"
     }
@@ -35,6 +38,7 @@
       "breed": "German Shepherd",
       "color": "Black/Brown",
       "age": "1",
+      "votes": "0",
       "image": "https://d.newsweek.com/en/full/2195249/german-shepherd-eating-ice-cream.jpg?w=1600&h=900&q=88&f=2aa1cee31e690553d366cb8d8bc9be05",
       "comment": "A stunning german shepherd puppy that loves to play!"
     }, 
@@ -44,6 +48,7 @@
       "breed": "Siberian Husky",
       "color": "Black/White",
       "age": "4",
+      "votes": "0",
       "image": "https://media-be.chewy.com/wp-content/uploads/2021/06/11142603/husky-dog-breed-1257560163-865x615.jpg",
       "comment": "An older husky that is still full of energy and love!"
     }, 
@@ -53,6 +58,7 @@
       "breed": "normal dog",
       "color": "brown",
       "age": "#",
+      "votes": "0",
       "image": "picture of dog",
       "comment": "cute dog"
     }
