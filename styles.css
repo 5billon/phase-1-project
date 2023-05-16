@@ -9,9 +9,24 @@ form {
     justify-self: center;
     height: 12rem;
     width: auto;
+    max-width: 14rem;
   }
-.tooltip-container {
-    position: relative;
-    display: flex;
-    place-content: center;
-}
+ 
+#pet-cards #popup {
+    display: none;
+  }
+  
+#pet-cards:hover #popup {
+    display: block;
+  }
+
+.card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
+  }
