@@ -9,34 +9,32 @@
     </head>
     <body>
         <header>
-            <h3>Cutest Pet Competition</h3>
-            <div class="container">
-                <button id="filterButton"></button>
-                <div id="dropDown">
-                    <ul>
-                        <li>Dogs </li>
-                        <li>Cats</li>
-                    </ul>
-                </div>
+            <div id="pet-header">
+                <img 
+                src="https://www.cantonpl.org/wp-content/uploads/sites/106/2022/03/Cutest-Pet-Contest-rectangle.png"
+                alt="pet-header"
+                />
             </div>
-           
+                       
         </header>
 
-
+<!-- Filter -->
+        <div class="container">
+            <form id="filter-form">
+                <label for="type">Filter by: </label>
+                <select name="type">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                </select>
+                <input type="submit" value="Filter" />
+            </form>
+        </div>
+    
 <!-- Pet Photos -->
         <div id="pet-collection"></div>
 
 <!--Pet Details-->
-
         <div id ="pet-details"></div>
-
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
-
-
-
 
 <form id="new-pet">
     <h4>Add New Pet</h4>
