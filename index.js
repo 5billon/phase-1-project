@@ -1,32 +1,8 @@
-fetch ("http://localhost:3000/cats")
-  .then (response => response.json())
-  .then((cats) => cats.forEach((cat) => renderPet(cat)))
-
-  fetch ("http://localhost:3000/dogs")
-  .then (response => response.json())
-  .then((dogs) => dogs.forEach((dog) => renderPet(dog)))
+fetch("http://localhost:3000/pets")
+  .then(response => response.json())
+  .then(pets => pets.forEach((pet) => renderPet(pet)))
 
 const petCollection = document.querySelector("#pet-collection")
-
-
-
-
-document.querySelector("#filterButton")
-filterButton.textContent = "Pick your species "
-
-// filterButton.addEventListener('onclick', filterMenu)
-
-// function filterMenu() {
-  
-
-// }
-
-
-
-
-
-
-
 
 function renderPet(pet) {
     const petCard = document.createElement('div')
@@ -66,7 +42,13 @@ function renderPet(pet) {
         pet.votes = parseInt(pet.votes) + parseInt(1)
         p.textContent = `${pet.votes} ❤️`
     }
-}
+
+    const type = document.createElement("p")
+    type.className = "pet-type"
+    type.textContent = pet.animal
+    type.style.display = 'none'
+    petCard.appendChild(type)
+ }
 
 function getPopupList(pet) {
   let info = document.createElement('ul')
@@ -106,7 +88,6 @@ function deletePopUp(e) {
   popup.style.display = 'none';
 }
 
-
 const form = document.querySelector('#new-pet')
 
 form.addEventListener('submit', (e) => handleSubmit(e))
@@ -126,7 +107,27 @@ function handleSubmit(e) {
 
     renderPet(pet)
 
-   
-
     e.target.reset()
+}
+
+const filterForm = document.querySelector('#filter-form')
+
+filterForm.addEventListener('submit', (e) => handleFilter(e))
+
+function handleFilter(e) {
+    e.preventDefault()
+
+    const type = e.target.type.value
+    pets = petCollection.querySelectorAll(".card")
+
+    //console.log(pets)
+
+    pets.forEach(pet => {
+      const petType = pet.querySelector(".pet-type").textContent
+      if (petType === type) {
+        pet.style.display = 'inline-grid'
+      } else {
+        pet.style.display = 'none'
+      }
+    })
 }
