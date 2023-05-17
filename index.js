@@ -90,32 +90,18 @@ function selectPets(pet) {
     const name = document.querySelector('#new-name')
     name.textContent = pet.name
 
-    //console.log(name)
-
     const breed = document.querySelector('#new-breed')
     breed.textContent = pet.breed
-
-    //console.log(breed)
 
     const color = document.querySelector('#new-color')
     color.textContent = pet.color
 
-    //console.log(color)
-
     const age = document.querySelector('#new-age')
     age.textContent = pet.age
-
-    //console.log(age)
-
-    /*const votes = document.querySelector('#new-votes')
-    votes.textContent = pet.votes
-
-    console.log(votes)*/
 
     const img = document.querySelector('#new-image')
     img.src = pet.image
 
-    //console.log(img)
 
     const comment = document.querySelector('#new-comment')
     comment.textContent = pet.comment
@@ -135,7 +121,7 @@ function handleSubmit(e) {
         "breed": e.target.breed.value,
         "color": e.target.color.value,
         "age": e.target.age.value,
-        //"votes": e.target.votes.value,
+        "votes": "0",
         "image": e.target.image.value,
         "comment": e.target['new-comment'].value
     }
