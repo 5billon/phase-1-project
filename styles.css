@@ -24,6 +24,7 @@ form {
     width: 15rem;
     height: 33rem;
     display: inline-grid;
+    
     margin: 1rem 2rem;
     box-shadow: 3px 4px #3717eb;
     background-color: #eeeeee;
@@ -72,4 +73,10 @@ input[type=number] {
   border: 2px solid rgb(243, 1, 191);
   border-radius: 4px;
   background-color: #3CBC8D;
+}
+
+#filter-form{
+  display: inline;
+  
+ 
 }

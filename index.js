@@ -20,7 +20,7 @@ function renderPet(pet) {
     petCard.appendChild(img)
 
     const p = document.createElement('p')
-    p.textContent = pet.votes
+    p.textContent = `Votes: ${pet.votes} `
     petCard.appendChild(p)
 
     const popup = document.createElement('div')
@@ -40,7 +40,7 @@ function renderPet(pet) {
 
     function addVotesToPet() {
         pet.votes = parseInt(pet.votes) + parseInt(1)
-        p.textContent = `${pet.votes} ❤️`
+        p.textContent = `Votes: ${pet.votes} ❤️`
     }
 
     const type = document.createElement("p")
