@@ -1,36 +1,45 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <title>Cutest Pet Competition</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer type = "text/javascript" src="index.js"></script>
-</head>
-
-<body>
-    <header>
-        <h3>Cutest Pet Competition</h3>
-    </header>
+<html lang="en" dir="ltr">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Cutest Pet Competition</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer type = "text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>Cutest Pet Competition</h3>
+            <div class="container">
+                <button id="filterButton"></button>
+                <div id="dropDown">
+                    <ul>
+                        <li>Dogs </li>
+                        <li>Cats</li>
+                    </ul>
+                </div>
+            </div>
+           
+        </header>
 
 
 <!-- Pet Photos -->
-<div id = "pet-cards">
-    <div id="popup" style="display: none">description text here
-    <img class = "pet-image" /></div>
-</div>
+        <div id="pet-collection"></div>
 
 <!--Pet Details-->
 
-<div id ="pet-details">
+        <div id ="pet-details"></div>
 
+ <h1>This is a Heading</h1>
+ <p>This is a paragraph.</p>
+ <p>This is another paragraph.</p>
 </div>
 
 
 
 
 <form id="new-pet">
-    <h4>Add Your Pet!</h4>
+    <h4>Add New Pet</h4>
     <label for="name">Name: </label>
     <input type="text" name="name" id="new-name" />
     <label for="breed">Breed: </label>
