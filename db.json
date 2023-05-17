@@ -34,7 +34,7 @@
       "animal": "cat"
     },
     {
-      "id": 1,
+      "id": 4,
       "name": "Mike",
       "breed": "German Shepherd",
       "color": "Black/Brown",
@@ -45,7 +45,7 @@
       "animal": "dog"
     },
     {
-      "id": 2,
+      "id": 5,
       "name": "John",
       "breed": "Siberian Husky",
       "color": "Black/White",
@@ -56,7 +56,7 @@
       "animal": "dog"
     },
     {
-      "id": 3,
+      "id": 6,
       "name": "Bella",
       "breed": "Jack Russel",
       "color": "White/Black",
