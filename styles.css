@@ -22,7 +22,7 @@ form {
     display: inline-grid;
     margin: 1rem 2rem;
     box-shadow: 3px 4px #3717eb;
-    background-color: lightgray;
+    background-color: #eeeeee;
     border-radius: 25px;
     
   }
@@ -32,5 +32,5 @@ form {
 }
 
 body {
-  background-color:cadetblue
+  background-color: cornflowerblue;
 }
