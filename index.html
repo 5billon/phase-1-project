@@ -1,50 +1,82 @@
 
 <!DOCTYPE html>
-<html lang="en">
-<head> 
-    <meta charset="UTF-8">
-    <title>Cutest Pet Competition</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer type = "text/javascript" src="index.js"></script>
-</head>
-
-<body>
-    <header>
-        <h3>Cutest Pet Competition</h3>
-    </header>
+<html lang="en" dir="ltr">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Cutest Pet Competition</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer type = "text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>Cutest Pet Competition</h3>
+            <div class="container">
+                <button id="filterButton"></button>
+                <div id="dropDown">
+                    <ul>
+                        <li>Dogs </li>
+                        <li>Cats</li>
+                    </ul>
+                </div>
+            </div>
+           
+        </header>
 
 
 <!-- Pet Photos -->
-<div id = "pet-cards">
-    <div id="popup" style="display: none">description text here
-    <img class = "pet-image" /></div>
-</div>
+        <div id="pet-collection"></div>
 
 <!--Pet Details-->
 
-<div id ="pet-details">
+        <div id ="pet-details"></div>
 
-</div>
+        <div class="container">
+            <form id="new-pet">
+                <h4>Add Your Pet!</h4>
 
+                <label for="name">Name: </label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="new-name" 
+                />
 
+                <label for="breed">Breed: </label>
+                <input 
+                    type="text" 
+                    name="breed" 
+                    id="new-breed" 
+                />
 
+                <label for="color">Color: </label>
+                <input 
+                    type="text" 
+                    name="color" 
+                    id="new-color" 
+                />
 
-<form id="new-pet">
-    <h4>Add Your Pet!</h4>
-    <label for="name">Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="breed">Breed: </label>
-    <input type="text" name="breed" id="new-breed" />
-    <label for="color">Color: </label>
-    <input type="text" name="color" id="new-color" />
-    <label for="age">Age: </label>
-    <input type="number" name="age" id="new-age" />
-    <label for="image">Image: </label>
-    <input type="text" name="image" id="new-image" />
-    <label for="new-comment">Comment: </label>
-    <textarea name="new-comment" id="new-comment"></textarea>
-    <input type="submit" value="Create" />
-  </form>
+                <label for="age">Age: </label>
+                <input 
+                    type="number" 
+                    name="age" 
+                    id="new-age" 
+                />
 
-</body>
+                <label for="image">Image: </label>
+                <input 
+                    type="text" 
+                    name="image" 
+                    id="new-image" 
+                />
+
+                <label for="new-comment">Comment: </label>
+                <textarea 
+                    name="new-comment" 
+                    id="new-comment">
+                </textarea>
+
+                <input type="submit" value="Create" />
+            </form>
+        </div>
+    </body>
 </html>
