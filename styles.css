@@ -52,22 +52,14 @@ form
 input[type=text] {
   width: 50%;
   padding: 5px 10px;
-}
-input[type=text] {
   border: 2px solid rgb(243, 1, 191);
   border-radius: 4px;
-}
-input[type=text] {
   background-color: #3CBC8D;
 }
 input[type=number] {
   width: 50%;
   padding: 5px 10px;
-}
-input[type=number] {
   border: 2px solid rgb(243, 1, 191);
   border-radius: 4px;
-}
-input[type=number] {
   background-color: #3CBC8D;
 }
