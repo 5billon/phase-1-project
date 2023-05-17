@@ -8,6 +8,26 @@ fetch ("http://localhost:3000/cats")
 
 const petCollection = document.querySelector("#pet-collection")
 
+
+
+
+document.querySelector("#filterButton")
+filterButton.textContent = "Pick your species "
+
+// filterButton.addEventListener('onclick', filterMenu)
+
+// function filterMenu() {
+  
+
+// }
+
+
+
+
+
+
+
+
 function renderPet(pet) {
     const petCard = document.createElement('div')
     petCard.className = 'card'
@@ -86,28 +106,6 @@ function deletePopUp(e) {
   popup.style.display = 'none';
 }
 
-function selectPets(pet) {
-    const name = document.querySelector('#new-name')
-    name.textContent = pet.name
-
-    const breed = document.querySelector('#new-breed')
-    breed.textContent = pet.breed
-
-    const color = document.querySelector('#new-color')
-    color.textContent = pet.color
-
-    const age = document.querySelector('#new-age')
-    age.textContent = pet.age
-
-    const img = document.querySelector('#new-image')
-    img.src = pet.image
-
-
-    const comment = document.querySelector('#new-comment')
-    comment.textContent = pet.comment
-
-    //console.log(comment)
-}
 
 const form = document.querySelector('#new-pet')
 
@@ -128,7 +126,7 @@ function handleSubmit(e) {
 
     renderPet(pet)
 
-    selectPets(pet)
+   
 
     e.target.reset()
 }
