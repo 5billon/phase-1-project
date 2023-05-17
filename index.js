@@ -1,13 +1,10 @@
-
-
 fetch ("http://localhost:3000/cats")
   .then (response => response.json())
   .then((cats) => cats.forEach((cat) => renderPet(cat)))
 
-fetch ("http://localhost:3000/dogs")
- .then (response => response.json())
- .then((dogs) => dogs.forEach((dog) => renderPet(dog)))
-
+  fetch ("http://localhost:3000/dogs")
+  .then (response => response.json())
+  .then((dogs) => dogs.forEach((dog) => renderPet(dog)))
 
 const petCardsDiv = document.querySelector("#pet-cards")
 
@@ -45,16 +42,56 @@ function renderPet(pet) {
 
 
 }
+function selectPets(pet) {
+    const name = document.querySelector('#new-name')
+    name.textContent = pet.name
 
+    const breed = document.querySelector('#new-breed')
+    breed.textContent = pet.breed
 
+    const color = document.querySelector('#new-color')
+    color.textContent = pet.color
 
+    const age = document.querySelector('#new-age')
+    age.textContent = pet.age
 
+    const img = document.querySelector('#new-image')
+    img.src = pet.image
 
+    const comment = document.querySelector('#new-comment')
+    comment.textContent = pet.comment
+    
+}
 
+const form = document.querySelector('#new-pet')
 
+form.addEventListener('submit', (e) => handleSubmit(e))
 
+function handleSubmit(e) {
+    e.preventDefault()
 
+    const pet = {
+        "name": e.target.name.value,
+        "breed": e.target.breed.value,
+        "color": e.target.color.value,
+        "age": e.target.age.value,
+        "votes": "0",
+        "image": e.target.image.value,
+        "comment": e.target['new-comment'].value
+    }
 
+    renderPet(pet)
 
+    selectPets(pet)
 
+    e.target.reset()
 
+}
+
+let e = document.getElementById('pet-cards');
+e.onmouseover = function() {
+  document.getElementById('popup').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup').style.display = 'none';
+}
