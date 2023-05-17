@@ -19,32 +19,73 @@ function renderPet(pet) {
     const img = document.createElement('img')
     img.src = pet.image
     img.className = 'pet-avatar'
+    img.addEventListener('mouseover', makePopUp)
+    img.addEventListener('mouseout', deletePopUp)
     petCard.appendChild(img)
 
     const p = document.createElement('p')
     p.textContent = pet.votes
     petCard.appendChild(p)
 
-    const button = document.createElement ('button')
+    const popup = document.createElement('div')
+    popup.className = 'popup'
+    popup.style.display = 'none'
+    popup.appendChild(getPopupList(pet))
+    petCard.appendChild(popup)
+
+    const button = document.createElement('button')
     button.id = "vote-button"
     button.textContent = "Vote For Me!"
     petCard.append(button)
 
     petCollection.appendChild(petCard)
 
+    button.addEventListener('click', addVotesToPet)
 
-    button.addEventListener('click',addVotesToPet)
-
-
-    function addVotesToPet(){
+    function addVotesToPet() {
         pet.votes = parseInt(pet.votes) + parseInt(1)
         p.textContent = `${pet.votes} ❤️`
-        
-        
     }
-
-
 }
+
+function getPopupList(pet) {
+  let info = document.createElement('ul')
+
+  let breed = document.createElement('dl')
+  breed.textContent = `Breed: ${pet.breed}`
+  info.appendChild(breed)
+
+  let furcolor = document.createElement('dl')
+  furcolor.textContent = `Color: ${pet.color}`
+  info.appendChild(furcolor)
+  
+  let age = document.createElement('dl')
+  age.textContent = `Age: ${pet.age}`
+  info.appendChild(age)
+
+  let comment = document.createElement('dl')
+  comment.textContent = `${pet.comment}`
+  info.appendChild(comment) 
+  
+  return info
+}
+
+function makePopUp(e) {
+  //console.log("makePopUp")
+  //console.log(e)
+  const petCard = e.target.parentElement
+  let popup = petCard.querySelector(".popup")
+  popup.style.display = 'block';
+}
+
+function deletePopUp(e) {
+  //console.log("deletePopUp")
+  //console.log(e)
+  const petCard = e.target.parentElement
+  let popup = petCard.querySelector(".popup")
+  popup.style.display = 'none';
+}
+
 function selectPets(pet) {
     const name = document.querySelector('#new-name')
     name.textContent = pet.name
@@ -65,6 +106,7 @@ function selectPets(pet) {
     const comment = document.querySelector('#new-comment')
     comment.textContent = pet.comment
 
+    //console.log(comment)
 }
 
 const form = document.querySelector('#new-pet')
@@ -89,13 +131,4 @@ function handleSubmit(e) {
     selectPets(pet)
 
     e.target.reset()
-
-}
-
-let e = document.getElementById('pet-cards');
-e.onmouseover = function() {
-  document.getElementById('popup').style.display = 'block';
-}
-e.onmouseout = function() {
-  document.getElementById('popup').style.display = 'none';
 }

@@ -4,20 +4,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
+}
+
 .pet-avatar {
     justify-self: center;
     height: 12rem;
     width: auto;
     max-width: 14rem;
-  }
- 
-#pet-cards #popup {
-    display: none;
-  }
-  
-#pet-cards:hover #popup {
-    display: block;
   }
 
 .card {
@@ -25,8 +18,19 @@ form {
     border: grey solid 1px;
     padding: 1rem;
     width: 15rem;
-    height: 25rem;
+    height: 30rem;
     display: inline-grid;
     margin: 1rem 2rem;
-    box-shadow: 3px 4px #e04b52
+    box-shadow: 3px 4px #3717eb;
+    background-color: lightgray;
+    border-radius: 25px;
+    
   }
+
+.popup {
+  text-align: left;
+}
+
+body {
+  background-color:cadetblue
+}
